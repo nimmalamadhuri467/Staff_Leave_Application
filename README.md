@@ -13,3 +13,14 @@ The Staff Leave Application is designed to facilitate a seamless process for sta
 - 5.Leave Validation: If eligible leaves are exhausted, the system provides the option to apply for paid leave.
 
 - 6.Syllabus tracking: Keeps track of syllabus coverage and progress for academic staff.
+
+## Technologies Used  
+
+### HTML  
+- Structures the webpage and forms for login, leave applications, and status tracking.  
+
+### CSS  
+- Enhances the visual design with layouts, colors, and responsive styling.  
+
+### JavaScript  
+- Adds interactivity, such as form validation and real-time status updates. 
