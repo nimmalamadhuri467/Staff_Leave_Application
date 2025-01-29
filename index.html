@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Leave Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="root">
+  <div class="container" id="login-container">
+    <h1>Login</h1>
+    <form onsubmit="handleLogin(event)">
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <div class="container" id="dashboard-container" style="display: none;">
+    <h1>Dashboard</h1>
+    <p>Welcome to the staff leave application dashboard!</p>
+    <!-- Your dashboard content goes here -->
+  </div>
+
+  <script defer src="app.js"></script>
+  <script>
+    function handleLogin(event) {
+      event.preventDefault(); // Prevent the default form submission
+      // Hide login and show dashboard
+      document.getElementById('login-container').style.display = 'none';
+      document.getElementById('dashboard-container').style.display = 'block';
+      document.body.classList.remove('login-page'); // Remove the background image class
+    }
+
+    // When the page loads, apply the background image class for the login page
+    window.onload = function() {
+      document.body.classList.add('login-page');
+    }
+  </script>
+</body>
+</html>
